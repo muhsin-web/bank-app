@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans&family=Poppins&display=swap');
+
+:root{
+     --primary-color: #f1e8fb;
+     --pre-primary-color: #f5f1fadd;
+     --secondary-color: rgb(74, 21, 110);
+     --primary-text-color: rgb(68, 68, 68);
+     --success-color: rgb(8, 139, 8);
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-weight: 400;
+     font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+     background-position: center;
+     overflow-y: hidden;
+}
+
+::-webkit-scrollbar{
+     width: 0px;
+}
+/* ######### GENERAL STYLINGS USED AROUND THE PAGE ######## */
+
+a{
+     text-decoration: none;
+     color: var(--primary-text-color);
+}
+p, h1, h2, h3 {
+     color: var(--primary-text-color);
+}
+li{
+     list-style: none;
+}
+i{
+     color: var(--secondary-color);
+}
+img{
+     width: 100%;
+     height: 100%;
+}
+.M-col img{
+     border-radius: 100%;
+
+}
+.width{
+     width: 100%;
+}
+
+.flex{
+     display: flex;
+}
+.wrap{
+     flex-wrap: wrap;
+}
+.gap{
+     gap: 1rem;
+}
+.center{
+     align-items: center;
+}
+.center-s{
+     justify-content: center;
+}
+.flex-col{
+     flex-direction: column;
+}
+.spb{
+     justify-content: space-between;
+}
+
+.text-center{
+     text-align: center;
+}
+
+
+/* ############ MAIN BODY STYLING ######### */
+
+main{
+     max-height: 100vh;
+     display: flex;
+     grid-gap: 1.2rem;
+     grid-template-columns: 0.9fr 2.3fr 1.1fr;
+}
+.L-col, .R-col{
+     background-color: var(--pre-primary-color);
+     max-height: 100%;
+}
+.L-col{
+     padding: 1rem 0;
+}
+
+.L-col .logo{
+     font-size: 1.89rem;
+     margin-bottom: 1.5rem;
+     margin-left: 1rem;
+}
+.L-col .logo span{
+     font-size: 2.7rem;
+     color: var(--secondary-color);
+}
+
+.L-col .nav-links li{
+     padding: .7rem 1rem;
+     padding-right: 3rem;
+     font-size: 1.2rem;
+     margin-bottom: .5rem;
+     /* border-top-right-radius: 10px; */
+}
+.L-col .nav-links li a{
+     color: rgb(56, 56, 56);
+     font-size: 1.4rem;
+}
+.L-col .nav-links li a i{
+     margin-right: 1rem;
+     font-size: 2rem;
+     color: var(--primary-text-color);
+}
+
+.L-col .nav-links li:hover{
+     background-color: #fff;
+}
+
+
+a.sign-out{
+     color: red;
+     font-size: 1.5rem;
+}
+
+
+
+/* ############ RIGHT COLUMN STYLINGS ######## */
+
+.R-col{
+     padding: 1.2rem;
+}
+.R-col .get-card h2{
+     text-align: right;
+     display: block;
+     margin-bottom: 3rem;
+}
+.R-col .get-card > .flex{
+     margin-bottom: 2rem;
+}
+.card-img{
+     width: 100%;
+     height: 160px;
+     border-radius: 10px;
+     margin: 1.5rem 0;
+     background-color: var(--secondary-color);
+}
+
+.R-col .payment h2{
+     margin-bottom: 1rem;
+}
+.R-col .payment ul li{
+     margin-bottom: 1rem;
+}
+.R-col .payment ul li a, .R-col .get-card a{
+     width: 100%;
+     background-color: var(--primary-color);
+     justify-content: space-between;
+     align-items: center;
+     padding: .67rem;
+}
+.R-col .payment ul li i, .R-col .get-card i{
+     font-size: 1.5rem;
+     padding: 2px;
+}
+.R-col .payment ul li a > div i, .R-col .get-card a.flex .flex > i{
+     border: 0.15rem solid var(--secondary-color);
+     border-radius: 7px;
+     background-color: #0679c626;
+}
+.R-col .payment ul li p, .R-col .get-card .flex p{
+     font-size: 12px;
+}
+.R-col .payment ul li h3, .R-col .get-card .flex h3{
+     font-size: 16px;
+     color: var(--secondary-color);
+}
+.R-col .payment ul li > .flex span, .R-col .get-card .flex .flex span{
+     margin-left: .4rem;
+}
+
+
+section{
+     grid-gap: 1.7rem;
+}
+
+.top-section, .down-section{
+     width: 100%;
+}
+
+.M-col nav{
+     padding: 2rem 0;
+}
+
+.M-col nav .user div{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     border: 1px solid var(--primary-text-color);
+}
+
+.M-col nav .user h3{
+     margin-left: 1rem;
+     font-weight: bold;
+}
+
+.acc-blc, .budget{
+     width: 50%;
+     padding: 1rem;
+     border-radius: 15px;
+     background-color: var(--pre-primary-color);
+}
+
+.acc{
+     padding: 1rem 2.5rem;
+     border-radius: 10px;
+     background: var(--secondary-color);
+}
+.acc > div{
+     text-align: center;
+}
+.acc h2{
+     font-weight: 300;
+     margin-bottom: .5rem;
+     font-size: 1.2rem;
+}
+.acc h1, .acc h2{
+     color: #eee;
+}
+.acc div.link span{
+     display: inline-block;
+     background-color: var(--secondary-color);
+     margin-top: 2rem;
+     text-align: center;
+}
+.acc div.link span p{
+     font-size: .8rem;
+     color: #eee;
+     margin-top: 10px;
+     font-weight: 300;
+     /* margin-left: -17px; */
+}
+.acc div.link span i{
+     color: var(--secondary-color);
+     font-size: 2rem;
+     background-color: var(--primary-color);
+     padding: .2rem .8rem;
+     border-radius: .4rem;
+
+}
+
+@media screen and  (max-width: 876px) {
+     main{
+          justify-content: center;
+          align-items: center;
+          grid-template-columns: 1fr;
+     }
+     .L-col, .R-col{
+          display: none;
+     }
+}
+
+.money-box > div{
+     border: .14rem solid var(--success-color);
+     padding: .2rem .6rem;
+     border-radius: .25rem;
+}
+.money-box > div > div{
+     margin-left: .8rem;
+}
+.money-box .red{
+     border-color: rgb(196, 47, 47);
+}
+.money-box .green h3{
+     font-size: 1rem;
+     color: var(--success-color);
+}
+.money-box .red h3{
+     font-size: 1rem;
+     color: rgb(196, 47, 47);
+}
+.money-box p{
+     font-size: .8rem;
+}
+
+.budget{
+     text-align: center;
+     background-color: var(--pre-primary-color);
+}
+.budget > h2{
+font-weight: 400;
+}
+.budget-1 > div{
+     border-radius: .5rem;
+     border: 2px solid var(--secondary-color);
+     padding: .3rem .5rem;
+}
+.budget > div i{
+     font-size: 1.5rem;
+     margin-right: .4rem;
+}
+.budget > div h2{
+     font-size: 1rem;
+}
+.budget > div h4{
+     font-size: .8rem;
+}
+.budget .budget-2 {
+     text-align: left;
+}
+.budget .budget-2  h2{
+     font-weight: bold;
+     margin-bottom: .7rem;
+}
+.budget .budget-2  i{
+     font-size: 2.2rem;
+}
+
+.range{
+     width: 100%;
+     background-color: var(--primary-color);
+     text-align: left;
+     /* padding: .8rem 1rem; */
+     border-radius: .5rem;
+}
+.range p{
+     color: #eee;
+     border-top-left-radius: .5rem;
+     border-bottom-left-radius: .5rem;
+     padding: .8rem 1rem;
+     width: 24%;
+     background-color: var(--success-color);
+}
+
+
+
+.down-section{
+     height: 40%;
+     overflow: scroll;
+}
+.down-section span{
+     margin-bottom: 1rem;
+     padding: .9rem;
+     background: var(--pre-primary-color);
+     border-top-right-radius: .5rem;
+     border-top-left-radius: .5rem;
+}
+table{
+     padding: 1rem 0;
+     width: 100%;
+     text-align: center;
+     border-collapse: collapse;
+}
+tbody, thead{
+     width: 100%;
+}
+table tr{
+     background-color: var(--pre-primary-color);
+}
+tbody tr{
+     border-top: 6px solid #fff;
+}
+table tr td, table thead tr th{
+     padding: .7rem 0;
+}
